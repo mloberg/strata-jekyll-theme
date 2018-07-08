@@ -1,0 +1,14 @@
+<!-- Footer -->
+<footer id="footer">
+  <div class="inner">
+    <ul class="icons">
+      {%- for social in site.social -%}
+        <li><a href="{{ social.url }}" class="icon"><i class="fab fa-lg fa-{{ social.icon }}"></i><span class="label">{{ social.name }}</span></a></li>
+      {%- endfor -%}
+    </ul>
+    <ul class="copyright">
+      <li>&copy; {{ site.author | escape }}</li>
+      <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    </ul>
+  </div>
+</footer>
