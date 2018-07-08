@@ -2,23 +2,24 @@ title: Your awesome title
 author: GitHub User
 email: your-email@domain.com
 avatar: /assets/images/avatar.jpg
-description: > # this means to ignore newlines until next key
+description: >
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 
 background: /assets/images/bg.jpg
 
-social:
-  - name: Twitter
-    url: ~
-    icon: twitter
-  - name: GitHub
-    url: ~
-    icon: github
-  - name: Instagram
-    url: ~
-    icon: instagram
+twitter_username: mloberg
+github_username: mloberg
+dribbble_username: ~
+facebook_username: ~
+flickr_username: ~
+instagram_username: mloberg
+linkedin_username: ~
+pinterest_username: ~
+youtube_username: ~
+googleplus_username: ~
+rss: true
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
