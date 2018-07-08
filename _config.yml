@@ -19,7 +19,7 @@ rss: true
 show_excerpts: false # set to true to show excerpts on the homepage
 
 author: GitHub User
-logo: /assets/images/avatar.jpg
+logo: https://picsum.photos/123?image=669
 
 # Build settings
 theme: jekyll-theme-strata
