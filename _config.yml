@@ -1,7 +1,5 @@
 title: Your awesome title
-author: GitHub User
 email: your-email@domain.com
-avatar: /assets/images/avatar.jpg
 description: >
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -22,6 +20,9 @@ googleplus_username: ~
 rss: true
 
 show_excerpts: false # set to true to show excerpts on the homepage
+
+author: GitHub User
+logo: /assets/images/avatar.jpg
 
 # Build settings
 theme: jekyll-theme-strata
