@@ -1,6 +1,26 @@
 ---
 layout: default
 ---
+
+{{ content }}
+
+{%- if site.posts.size > 0 -%}
+	<section id="posts">
+		<header class="major">
+			<h2>Posts</h2>
+		</header>
+		<ul class="post-list alt">
+			{%- for post in site.posts -%}
+				<li>
+					<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+					<h3><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+					{{ post.excerpt }}
+				</li>
+			{%- endfor -%}
+		</ul>
+	</section>
+{%- endif -%}
+
 <!-- One -->
 <section id="one">
 	<header class="major">
