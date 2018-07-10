@@ -10,7 +10,7 @@
 		$body = $('body'),
 		$header = $('#header'),
 		$footer = $('#footer'),
-		$main = $('#main'),
+		$main = $('main'),
 		settings = {
 
 			// Parallax background effect?
@@ -98,13 +98,13 @@
 		// Lightbox gallery.
 			$window.on('load', function() {
 
-				$('#two').poptrox({
+				$('.gallery').poptrox({
 					caption: function($a) { return $a.next('h3').text(); },
 					overlayColor: '#2c2c2c',
 					overlayOpacity: 0.85,
 					popupCloserText: '',
 					popupLoaderText: '',
-					selector: '.work-item a.image',
+					selector: '.gallery-item a.image',
 					usePopupCaption: true,
 					usePopupDefaultStyling: false,
 					usePopupEasyClose: false,
