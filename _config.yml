@@ -16,7 +16,7 @@ youtube_username: ~
 googleplus_username: ~
 rss: true
 
-show_excerpts: false # set to true to show excerpts on the homepage
+show_excerpts: true
 
 author: GitHub User
 logo: https://picsum.photos/123?image=669
