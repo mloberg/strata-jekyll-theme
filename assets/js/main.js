@@ -10,7 +10,7 @@
 		$body = $('body'),
 		$header = $('#header'),
 		$footer = $('#footer'),
-		$main = $('main'),
+		$main = $('#main'),
 		settings = {
 
 			// Parallax background effect?
