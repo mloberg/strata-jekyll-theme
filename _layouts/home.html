@@ -9,6 +9,7 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
+    {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
     <section class="post-list">
       <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
       {%- for post in site.posts -%}
@@ -16,7 +17,7 @@ layout: default
         <section>
           <header>
             <h3><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-            <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+            <p class="post-meta">{{ post.date | date: date_format }}</p>
           </header>
           {%- if site.show_excerpts -%}
             {{ post.excerpt }}
