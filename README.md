@@ -2,6 +2,8 @@
 
 jekyll-theme-strata is a Jekyll theme based on the [Strata HTML5 UP](https://html5up.net/).
 
+See [example site](https://mloberg.github.io/strata-jekyll-theme/).
+
 ![minima theme preview](/screenshot.png)
 
 ## Installation
