@@ -24,7 +24,77 @@ And then execute:
 
 ## Usage
 
-_TODO_
+Strata comes with the [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag)
+plugin preinstalled. It uses the `logo` attribute as the site's avatar. Otherwise
+see [usage](https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md)
+for more details on the SEO plugin.
+
+### Changing Background
+
+Changing the background can be done by adding the image you would like at the
+`assets/images/bg.jpg` path. This image should be 1274px x 1274px.
+
+### Social Icons
+
+You can add links to your social accounts by adding one or more of the
+following options to your config.
+
+```yaml
+twitter_username: ~
+github_username:  ~
+dribbble_username: ~
+facebook_username: ~
+flickr_username: ~
+instagram_username: ~
+linkedin_username: ~
+pinterest_username: ~
+youtube_username: ~
+googleplus_username: ~
+rss: true # false to hide rss icon
+```
+
+### Enabling comments (via Disqus)
+
+If you use Disqus for comments on your Jekyll blog, you can enable this with
+the following configuration:
+
+```yaml
+disqus:
+  shortname: my_disqus_shortname
+```
+
+Comments are only enabled in production builds (`JEKYLL_ENV=production`).
+
+You can disable comments on a specific post by adding `comments: false` to the
+post's front matter.
+
+### Enabling Google Analytics
+
+To enable Google Analytics, add this configuration:
+
+```yaml
+google_analytics: UA-NNNNNNNN-N
+```
+
+Google Analytics are only enabled in production builds (`JEKYLL_ENV=production`).
+
+### Enabling Excerpts on the Home Page
+
+To display post excerpts on the home page, add the following configration:
+
+```yaml
+show_excerpts: true
+```
+
+### Change Post Date Format
+
+You can specify the date format of posts with the following configuration:
+
+```yaml
+date_format: "%b %-d, %Y"
+```
+
+The format documentation can be [found online](http://shopify.github.io/liquid/filters/date/).
 
 ## Contributing
 
