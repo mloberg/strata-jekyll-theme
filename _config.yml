@@ -22,7 +22,8 @@ author: GitHub User
 logo: https://picsum.photos/123?image=669
 
 # Build settings
-theme: jekyll-theme-strata
+# theme: jekyll-theme-strata
+# remote_theme: mloberg/strata-jekyll-theme
 
 plugins:
   - jekyll-feed
