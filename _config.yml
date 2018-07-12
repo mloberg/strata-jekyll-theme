@@ -19,7 +19,6 @@ rss: true
 show_excerpts: true
 date_format: "%b %-d, %Y"
 
-author: GitHub User
 logo: https://picsum.photos/123?image=669
 
 # Build settings
