@@ -16,8 +16,8 @@ layout: default
         <hr>
         <section class="post-list-item">
           <header>
-            <p class="post-meta pull-right">{{ post.date | date: date_format }}</p>
             <h3><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            <p class="post-meta">{{ post.date | date: date_format }}</p>
           </header>
           {%- if site.show_excerpts -%}
             <div class="post-excerpt">
