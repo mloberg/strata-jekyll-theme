@@ -20,7 +20,7 @@ layout: default
             <p class="post-meta">{{ post.date | date: date_format }}</p>
           </header>
           {%- if site.show_excerpts -%}
-            {{ post.excerpt }}
+            <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
             <ul class="actions">
               <li><a href="{{ post.url | relative_url }}" class="button">Continue Reading</a></li>
             </ul>
