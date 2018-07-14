@@ -14,16 +14,18 @@ layout: default
       <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
       {%- for post in site.posts -%}
         <hr>
-        <section>
+        <section class="post-list-item">
           <header>
+            <p class="post-meta pull-right">{{ post.date | date: date_format }}</p>
             <h3><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-            <p class="post-meta">{{ post.date | date: date_format }}</p>
           </header>
           {%- if site.show_excerpts -%}
-            <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
-            <ul class="actions">
-              <li><a href="{{ post.url | relative_url }}" class="button">Continue Reading</a></li>
-            </ul>
+            <div class="post-excerpt">
+              <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+              <ul class="actions">
+                <li><a href="{{ post.url | relative_url }}" class="button">Continue Reading</a></li>
+              </ul>
+            </div>
           {%- endif -%}
         </section>
       {%- endfor -%}
